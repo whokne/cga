@@ -1,0 +1,14 @@
+Cohen
+1.Assign Region code to both ends points say C0 and C1
+2.If C0 or C1=0000 then accepted completely(insidewindow)
+	else if
+	c0 and c1 != 0000 Reject if
+	else
+	clip if line crossed Xmin or Xmax
+		then
+		y=y1+m(x-x1)
+		else
+		x=x1+1/m(y-y1)
+3.Verify Xmin <=x<=xmax
+	Ymin<=Y<=Ymax
+if doesnot satisfy then repeat

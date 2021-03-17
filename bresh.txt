@@ -1,0 +1,24 @@
+Algorithm for Bresham line drawing algorithm
+
+1.Input the two line end point and store the left end at (x0,y0) and right end point (x1,y1)
+2.Calculate dx=x1-x0 and dy=y1-y0;
+3.Calculate initial decision parameter
+	p=2dy-dx
+4. If x1>x0 then 
+	set x=x0;
+		y=y0;
+	set xend=x1;
+otherwise
+	set x=x1;
+	y=y1;
+	set xend =x0;
+
+5.Draw the pixel at (x,y)
+6.while(x<end)
+	x++:
+	if p<0,then
+	p=p+2dy
+	otherwise
+	y++;
+	p=p+2dy-2dx
+	Draw pixel at (x,y)
